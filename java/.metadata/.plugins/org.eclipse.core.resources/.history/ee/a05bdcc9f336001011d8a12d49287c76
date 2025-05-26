@@ -1,0 +1,11 @@
+package Store;
+
+public class store2 extends hqstore  {
+	
+	
+	@Override
+	class void jajangmeon() {
+		
+	}
+
+}

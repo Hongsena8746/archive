@@ -1,0 +1,37 @@
+package Store;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		   Hqstore hq = new Hqstore();
+	        Store1 store1 = new Store1();
+	        Store2 store2 = new Store2();
+	        Store3 store3 = new Store3();
+
+	     
+	        
+	        System.out.println("1호점가격표입니다.");
+	        store1.jajangmyeon();
+	        store1.jjamppong();
+	        store1.tangsuyuk();
+	        store1.gunmandu();
+	        store1.gonggibab();
+	        
+	        
+	        System.out.println("2호점가격표입니다.");
+	        store2.jajangmyeon();
+	        store2.jjamppong();
+	        store2.tangsuyuk();
+	        store2.gunmandu();
+	        store2.gonggibab();
+	        
+	        System.out.println("3호점가격표입니다.");
+	        store3.jajangmyeon();
+	        store3.jjamppong();
+	        store3.tangsuyuk();
+	        store3.gunmandu();
+	        store3.gonggibab();
+
+	}
+
+}

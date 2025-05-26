@@ -1,0 +1,62 @@
+package Smartphone;
+
+
+public class SmartPhoneMain {
+
+   public static void main(String[] args) {
+      SmartPhone phone = new SmartPhone();
+      Scanner scanner = new Scanner(System.in);
+      
+      
+      System.out.println("연락처 2개를 등록하세요:");
+      for (int i = 0; i < 2; i++) {
+          phone.addContact(inputContact(scanner));
+      }
+
+      phone.printAllContacts();
+
+      System.out.println("추가로 연락처 5개를 등록합니다:");
+      for (int i = 0; i < 5; i++) {
+          phone.addContact(inputContact(scanner));
+      }
+
+      phone.printAllContacts();
+
+      System.out.println("이름으로 검색할 연락처를 입력하세요:");
+      String searchName = scanner.nextLine();
+      phone.searchContact(searchName);
+
+      System.out.println("삭제할 연락처 이름을 입력하세요:");
+      String deleteName = scanner.nextLine();
+      phone.deleteContact(deleteName);
+      phone.printAllContacts();
+
+      System.out.println("수정할 연락처 이름을 입력하세요:");
+      String updateName = scanner.nextLine();
+      System.out.println("새로운 연락처 정보를 입력하세요:");
+      Addr updatedContact = inputContact(scanner);
+      phone.updateContact(updateName, updatedContact);
+      phone.printAllContacts();
+
+      scanner.close();
+  }
+
+  // 사용자 입력을 받아서 Addr 객체를  생성
+  private static Addr inputContact(Scanner scanner) {
+      System.out.print("이름: ");
+      String name = scanner.nextLine();
+      System.out.print("전화번호: ");
+      String phone = scanner.nextLine();
+      System.out.print("이메일: ");
+      String email = scanner.nextLine();
+      System.out.print("주소: ");
+      String address = scanner.nextLine();
+      System.out.print("그룹(친구/가족): ");
+      String group = scanner.nextLine();
+
+      return new Addr(name, phone, email, address, group);
+  }
+      
+   }
+
+}
