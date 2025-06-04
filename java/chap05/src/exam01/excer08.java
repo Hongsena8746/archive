@@ -16,8 +16,8 @@ public class excer08 {
 		System.out.println("3번의점수:"+Scores[2]);
 		System.out.println("4번의점수:"+Scores[3]);
 		System.out.println("5번의점수:"+Scores[4]);
-		
-		
+	}	
+}		
 	
 //		int sum = 0;
 //		for(int i=0; i<Scores.length; i++) {

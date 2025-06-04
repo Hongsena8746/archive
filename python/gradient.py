@@ -1,4 +1,3 @@
-
 import numpy as np
 
 # 가중치 초기값 설정
@@ -17,7 +16,7 @@ for t in range(num_iterations):
 
     # 가중치 업데이트
     w0 = w0 - learning_rate * w0_gradient
-    w1 = w1 - learning_rate * w1_gradient
+    w1 = w1 - learning_rate * w1_gradien
 
     # 현재 반복의 가중치 출력한다.
     print(f"반복 {t+1}: w0 = {w0:.6f}, w1 = {w1:.6f}")

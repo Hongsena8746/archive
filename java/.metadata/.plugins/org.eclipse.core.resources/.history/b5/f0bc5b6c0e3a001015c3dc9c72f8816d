@@ -1,5 +1,0 @@
-package Smartphone;
-
-public interface ShowData {
-
-}
