@@ -1,4 +1,5 @@
 package ClassDiagram1;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class Main {
@@ -45,9 +46,10 @@ public class Main {
  		
  		public static void printTranscriptInfo(ArrayList<Transcript>list){
  			for(Transcript tran : list ) {
- 				System.out.prainln(tran.getStudent().getName()+" "+tran.getCourse().getName()+" "+tran.getGrade())
- 			}
+ 				System.out.println(tran.getStudent().getName()+" "+
+ 									tran.getCourse().getName()+" "+
+ 									tran.getGrade());
+ 			
  		}
 	}
-
 }

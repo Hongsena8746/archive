@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Vector;
 
-import ClassDiagram.Student;
 
 public class Course {
     private String name;

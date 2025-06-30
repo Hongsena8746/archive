@@ -57,13 +57,13 @@ package Smartphone;
 	      this.group = group;
 	   }
 	   
-	// 추상메소드    
-	   @Override
-	   public void showData() {    // 이름 전화번호
-		   System.out.println("이름:");
-		   System.out.println("전화번호:");
+	
+//	   @Override
+//	   public void showData() {
+//		   System.out.println();
+//		   System.out.println();
 		   
 	   }
-	}
+//	}
 	
 	
