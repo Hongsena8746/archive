@@ -1,0 +1,6 @@
+*.pdf
+
+**/models/
+**/db/
+**.env
+**/ffmpeg-2025-08-18-git-0226b6fb2c-essentials_build/

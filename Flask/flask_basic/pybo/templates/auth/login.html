@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-3">
+  <form method="post" class="post-form">
+    {# CSRF 보호 토큰 - form 보안 필수 요소 #}
+    {{ form.csrf_token }}
+
+    {# 필드 오류 및 flash 메시지 출력 템플릿 포함 #}
+    {% include "form_errors.html" %}
+
+    <div class="form-group">
+      <label for="username">사용자 이름</label>
+      <input type="text" class="form-control" name="username" id="username"
+             value="{{ form.username.data or '' }}">
+    </div>
+
+    <div class="form-group">
+      <label for="password">비밀번호</label>
+      <input type="password" class="form-control" name="password" id="password"
+             value="{{ form.password.data or '' }}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">로그인</button>
+  </form>
+</div>
+{% endblock %}
